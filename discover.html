@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="mx-40 font-poppins bg-primary-bg">
+    <header>
+        <nav class="p-6">
+            <div class="navbar bg-base-100 shadow-sm gap-1">
+                <img src="assets/logo.png" alt="">
+                <div class="flex-1">
+                  <a class="font-poppins">Dev<span class="font-bold">Board</span></a>
+                </div>
+                <div class="flex gap-1">
+                  <ul class="menu menu-horizontal px-1">
+                    <button class="btn btn-primary" id="go-back">Back To Desk</button>
+                  </ul>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="flex flex-col items-center content-center">
+           <div>
+            <h1 class="text-3xl font-bold">Blogs</h1>
+           </div>
+            <div class="card w-[100%] bg-base-100 card-md shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+                  <p>There are various ways to select an element in DOM. In order to select an element by its ID we can use getElementbyID method. If we want to select multiple elements with class name we can use querySelectorAll method etc.</p>
+                </div>
+              </div>
+              <div class="card w-[100%] bg-base-100 card-md shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+                  <p>The main differences are: <br>innerHTML: Includes html elements. <br>innerText: Includes text inside the HTML tag. <br>innerContent: Has no HTML tags and removes existing tags when setting a value.</p>
+                </div>
+              </div>
+              <div class="card w-[100%] bg-base-100 card-md shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title font-bold">Question-3: What is event delegation in the DOM?</h2>
+                  <p>So, basically while creating a website we may use many event in various elements individually. This may create problems while processing the website due to trying to process every event at once so the event delegations helps us to delegate actions or events by a specific time that we apply to keep the site running smoothly and flawlessly.</p>
+                </div>
+              </div>
+              <div class="card w-[100%] bg-base-100 card-md shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title font-bold">Question-4: What is event bubbling in the DOM?</h2>
+                  <p>In event bubbling a child element gets on top of its parent element and keeps going until eventually reaching the document.</p>
+                </div>
+              </div>
+              <div class="card w-[100%] bg-base-100 card-md shadow-sm">
+                <div class="card-body">
+                  <h2 class="card-title font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                  <p>We can create an element using document.createElement(), we can add elements by appendChild() and remove them by removeChild()</p>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script src="script/discover.js"></script>
+</body>
+</html>
